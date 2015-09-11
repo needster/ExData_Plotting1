@@ -72,10 +72,9 @@ plot4 <- function() {
     
     # generate the Global active power plot
     with(powerData_subset, plot(Time,Global_active_power, typ='l', 
-                                xlab="", ylab="Global Active Power (kilowatts)"))
+                                xlab="", ylab="Global Active Power"))
     # generate the Voltage plot
     with(powerData_subset, plot(Time,Voltage, typ='l', xlab="datetime"))
-    
     
     # generate an empty plot using type =“n”, which
     # sets up the plot and does not fill it with data
